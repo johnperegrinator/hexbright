@@ -38,9 +38,9 @@ hexbright hb;
 #define HOLD_TIME 250 // milliseconds before going to strobe
 #define OFF_TIME 650 // milliseconds before going off on the next normal button press
 
-#define BRIGHTNESS_COUNT 4
+#define BRIGHTNESS_COUNT 6
 #define BRIGHTNESS_OFF BRIGHTNESS_COUNT-1
-int brightness[BRIGHTNESS_COUNT] = {300, 600, 1000, OFF_LEVEL};
+int brightness[BRIGHTNESS_COUNT] = {1, 250, 500, 750, 1000, OFF_LEVEL};
 int current_brightness = BRIGHTNESS_OFF; // start on the last mode (off)
 
 unsigned long short_press_time = 0;
